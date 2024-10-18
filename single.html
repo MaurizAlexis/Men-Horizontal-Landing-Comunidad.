@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page con Contador de Días</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS -->
+</head>
+
+<body>
+  <!-- Menú responsivo -->
+  <nav>
+    <div class="mobile">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <div class="more"><button>Más</button></div>
+      </div>
+      <div class="links">
+        <a href="#">Hogar</a>
+        <a href="#">Acerca</a>
+        <a href="#">Contacto</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Testimonios</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+    <div class="desktop">
+      <div class="logo">Logo</div>
+      <div class="primary">
+        <a href="#">Hogar</a>
+        <a href="#">Acerca</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="secondary full">
+        <a href="#">Proyectos</a>
+        <a href="#">Testimonios</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="secondary mini">
+        <a href="#" class="more">Más</a>
+        <div class="submenu">
+          <a href="#">Contacto</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contador de días -->
+  <div class="counter-container">
+    <div class="counter" id="days">0</div>
+    <div class="label">Días restantes para el evento</div>
+  </div>
+
+  <!-- Vincular archivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>

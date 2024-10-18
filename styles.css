@@ -1,0 +1,163 @@
+/* Estilos globales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f3eae0; /* Beige claro para el fondo */
+  }
+  
+  /* Estilos para el nav */
+  nav {
+    background-color: #f28c3f; /* Naranja para el fondo del menú */
+    color: white;
+    width: 100%;
+  }
+  
+  nav .mobile {
+    display: none;
+  }
+  
+  nav .logo {
+    min-width: 250px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #f28c3f;
+    background-color: #f1b576; /* Fondo suave beige para hover */
+    transition: 0.3s ease;
+  }
+  
+  nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav .desktop .primary,
+  nav .desktop .secondary {
+    display: flex;
+  }
+  
+  nav .secondary.mini {
+    display: none;
+  }
+  
+  @media screen and (max-width: 894px) {
+    nav .logo {
+      min-width: 100px;
+    }
+  
+    nav .secondary.full {
+      display: none;
+    }
+  
+    nav .secondary.mini {
+      display: block !important;
+    }
+  
+    nav .secondary.mini .submenu {
+      background-color: #f28c3f; /* Naranja para el menú desplegable */
+      position: absolute;
+      display: none;
+    }
+  
+    nav .secondary.mini:hover .submenu {
+      display: block;
+    }
+  
+    nav .secondary.mini .submenu a {
+      padding: 15px 25px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media screen and (max-width: 516px) {
+    nav .desktop {
+      display: none;
+    }
+  
+    nav .mobile {
+      display: block;
+    }
+  
+    nav .mobile .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #f1b576; /* Color beige para el fondo de la cabecera móvil */
+    }
+  
+    nav .mobile .header .logo {
+      flex: 1;
+      text-align: center;
+      font-size: 1.5em;
+      color: #333;
+    }
+  
+    nav .mobile .header .more button {
+      padding: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: #333;
+      font-size: 1.2em;
+    }
+  
+    nav .mobile .header .more button:hover {
+      background-color: #f28c3f; /* Naranja suave al hacer hover */
+      color: white;
+    }
+  
+    nav .mobile .links {
+      background-color: #f28c3f; /* Naranja para el menú móvil */
+      padding: 10px 0;
+    }
+  
+    nav .mobile .links a {
+      padding: 15px 20px;
+      font-size: 1.1em;
+      color: white;
+    }
+  
+    nav .mobile .links a:hover {
+      background-color: #f1b576;
+      color: #f28c3f;
+    }
+  }
+  
+  /* Estilos del contador */
+  .counter-container {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff3e0; /* Fondo claro para el contador */
+    color: #333;
+  }
+  
+  .counter {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-size: 1.2em;
+    color: #f28c3f; /* Naranja para los textos del contador */
+  }
+  
+  
